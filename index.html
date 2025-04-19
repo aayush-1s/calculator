@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<style>
+body {
+    background-color: lightslategrey;
+    text-align: center;
+}
+h4 {
+    display: inline-block;
+}
+button {
+    margin: 1vw;
+    padding: 2vw;
+}
+#result {
+    padding: 1vw;
+    width: 30%;
+    text-align: center;
+}
+</style>
+<script src="index.js">
+</script>
+<body>
+<div>
+<h1>This is a basic Calculator</h1>
+<h3>Enter two numbers to do an operation on:</h3>
+<h4>Enter first number:</h4>
+<input type="number" id="num1" placeholder="First number">
+<br>
+<h4>Enter second number:</h4>
+<input type="number" id="num2" placeholder="Second number">
+</div>
+<div>
+<h3>Select the desired operation:</h3>
+<button onclick="add()">+</button>
+<button onclick="subtract()">-</button>
+<button onclick="divide()">/</button>
+<button onclick="multiply()">*</button>
+<button onclick="clearResult()">Remove</button>
+</div>
+<br>
+<div>
+<input id="result" type="text" placeholder="Result will be displayed here" readonly>
+</div>
+</body>
+</html>
